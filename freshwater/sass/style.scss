@@ -11,6 +11,12 @@ Version: 1.2
 /****** header *****/
 
 /***** content *****/
+// top of content on "full width page"
+#content.fws-full-width {
+	#content-wrap {
+		padding-top: 0px;
+	}
+}
 
 /***** widgets *****/
 

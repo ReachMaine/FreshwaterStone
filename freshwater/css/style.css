@@ -26,6 +26,9 @@ Version: 1.2
 
 /****** header *****/
 /***** content *****/
+#content.fws-full-width #content-wrap {
+  padding-top: 0px; }
+
 /***** widgets *****/
 /***** footer *****/
 /* ----  Media Settings --------------------------------- */
