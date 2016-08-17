@@ -18,6 +18,17 @@ Version: 1.2
 	}
 }
 
+#content.fws-page-with-title {
+	#content-wrap {
+		padding-top: 40px;
+	}
+}
+.page-title-container {
+	.page-title {
+		color: $page-title-color
+	}
+}
+
 hr.separator {
 	display: inherit;
 }

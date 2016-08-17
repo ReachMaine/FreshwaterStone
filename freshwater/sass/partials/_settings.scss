@@ -2,7 +2,7 @@
 // Font Colors
 $linkcolor: #a62425;
 $titleFontColor: #a62425;
-
+$page-title-color: #52728E;
 // Background colors: 
 
 $bkgoundContent: #FFFFFF; // 
@@ -25,4 +25,8 @@ $menuBarbkg: #D14719; //
         width: 100%;
         height: 100%;
 	}
+}
+
+.fws-center {
+	text-align: center;
 }
