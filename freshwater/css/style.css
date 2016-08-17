@@ -1,4 +1,3 @@
-@import url("../oshin/style.css");
 /*
 Theme Name: Freshwater
 Description: Oshin Child Theme for Freshwater Stone
@@ -6,6 +5,7 @@ Description: Oshin Child Theme for Freshwater Stone
 Template: oshin
 Version: 1.2
 */
+@import url("../oshin/style.css");
 /* Colors ---------------------------------------------- */
 /* Typography ------------------------------------------ */
 /* General */
@@ -29,7 +29,31 @@ Version: 1.2
 #content.fws-full-width #content-wrap {
   padding-top: 0px; }
 
+hr.separator {
+  display: inherit; }
+
+hr:after {
+  background: url("./images/fws-hr-icon.png") no-repeat top center;
+  content: "";
+  display: block;
+  height: 25px;
+  /* height of the ornament */
+  position: relative;
+  top: -12px;
+  /* half the height of the ornament */ }
+
 /***** widgets *****/
 /***** footer *****/
+#bottom-widgets {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.social-footer a {
+  clear: both; }
+  .social-footer a img {
+    float: left; }
+  .social-footer a h5 {
+    padding-left: 35px; }
+
 /* ----  Media Settings --------------------------------- */
 /* end Media Settings ------------------------------------------ */

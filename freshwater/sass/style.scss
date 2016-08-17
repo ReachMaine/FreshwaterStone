@@ -18,8 +18,36 @@ Version: 1.2
 	}
 }
 
+hr.separator {
+	display: inherit;
+}
+
+hr:after { 
+    background: url('./images/fws-hr-icon.png') no-repeat top center;
+    content: "";
+    display: block;
+    height: 25px; /* height of the ornament */
+    position: relative;
+    top: -12px; /* half the height of the ornament */
+}
+
+
 /***** widgets *****/
 
 /***** footer *****/
 
+#bottom-widgets {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.social-footer a {
+	clear: both;
+	img {
+		float: left;
+	}
+	h5 {
+		padding-left: 35px;
+	}
+}
 @import "partials/media"; // keep at end of of file 
