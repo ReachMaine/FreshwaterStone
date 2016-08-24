@@ -38,6 +38,9 @@ Version: 1.2
 .page-title-container .page-title {
   color: #52728e; }
 
+#content .rev_slider_wrapper {
+  border: 6px solid #e4e4e4; }
+
 hr.separator {
   display: inherit; }
 
@@ -56,13 +59,17 @@ hr:after {
 #bottom-widgets {
   padding-top: 30px;
   padding-bottom: 30px; }
-
-.social-footer a {
-  clear: both; }
-  .social-footer a img {
-    float: left; }
-  .social-footer a h5 {
-    padding-left: 35px; }
+  #bottom-widgets .widget {
+    clear: both; }
+    #bottom-widgets .widget h6 {
+      margin-bottom: 10px; }
+  #bottom-widgets .widget:not(:first-child) {
+    padding-top: 20px; }
+  #bottom-widgets .social-footer a {
+    clear: both; }
+    #bottom-widgets .social-footer a img {
+      float: left;
+      padding-right: 10px; }
 
 /* ----  Media Settings --------------------------------- */
 /* end Media Settings ------------------------------------------ */
