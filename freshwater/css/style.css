@@ -54,6 +54,13 @@ hr:after {
   top: -12px;
   /* half the height of the ornament */ }
 
+/*  portfolio */
+.portfolio-all-wrap .filters {
+  display: flex;
+  justify-content: center; }
+  .portfolio-all-wrap .filters h6:first-child {
+    order: 6; }
+
 /***** widgets *****/
 /***** footer *****/
 #bottom-widgets {
