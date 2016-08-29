@@ -71,7 +71,21 @@ hr:after {
   .portfolio-all-wrap .filters h6:first-child {
     order: 6; }
 
-/***** widgets *****/
+/***** widgets in content *****/
+#page-content .widget.widget_advanced_menu {
+  margin-bottom: 20px; }
+  #page-content .widget.widget_advanced_menu ul {
+    text-align: center;
+    padding-left: 0px; }
+    #page-content .widget.widget_advanced_menu ul li.menu-item {
+      display: inline-block;
+      cursor: pointer;
+      padding: 5px 18px 5px 20px; }
+      #page-content .widget.widget_advanced_menu ul li.menu-item a {
+        text-transform: uppercase;
+        font-weight: bold; }
+
+/**** sidebar ****/
 /***** footer *****/
 #bottom-widgets {
   padding-top: 30px;
