@@ -52,7 +52,8 @@ Version: 1.2
   border: 6px solid #e4e4e4; }
 
 hr.separator {
-  display: inherit; }
+  display: inherit;
+  overflow: visible; }
 
 hr:after {
   background: url("./images/fws-hr-icon.png") no-repeat top center;

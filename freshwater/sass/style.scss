@@ -34,6 +34,7 @@ Version: 1.2
 
 hr.separator {
 	display: inherit;
+	overflow: visible; // fix for IE.
 }
 
 hr:after { 
