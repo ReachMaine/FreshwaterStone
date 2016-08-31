@@ -37,16 +37,15 @@ Version: 1.2
   box-sizing: border-box;
   -webkit-box-sizing: border-box; }
 
-.testimonials_wrap .testimonials-slides .testimonial_slide .testimonial_slide_inner {
-  padding-left: 0px; }
-  .testimonials_wrap .testimonials-slides .testimonial_slide .testimonial_slide_inner i {
-    display: none;
-    visibility: hidden; }
+.page #content #comments {
+  padding-top: 0px;
+  padding-bottom: 0px; }
 
 /****** header *****/
 /***** content *****/
 #content.fws-full-width #content-wrap {
-  padding-top: 0px; }
+  padding-top: 0px;
+  padding-bottom: 0px; }
 
 #content.fws-page-with-title #content-wrap {
   padding-top: 40px; }
@@ -54,8 +53,19 @@ Version: 1.2
 .page-title-container .page-title {
   color: #52728e; }
 
+/*** homepage ***/
 #content .rev_slider_wrapper {
   border: 6px solid #e4e4e4; }
+
+.testimonials_wrap .testimonials-slides .testimonial_slide .testimonial_slide_inner {
+  padding-left: 0px; }
+  .testimonials_wrap .testimonials-slides .testimonial_slide .testimonial_slide_inner i {
+    display: none;
+    visibility: hidden; }
+  .testimonials_wrap .testimonials-slides .testimonial_slide .testimonial_slide_inner .testimonial-content {
+    margin-bottom: 5px; }
+  .testimonials_wrap .testimonials-slides .testimonial_slide .testimonial_slide_inner .testimonial-author-info-wrap h6.testimonial-author {
+    margin-bottom: 0px; }
 
 hr.separator {
   display: inherit;

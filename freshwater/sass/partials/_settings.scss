@@ -41,14 +41,8 @@ $menuBarbkg: #D14719; //
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
-.testimonials_wrap  {
-	.testimonials-slides .testimonial_slide {
-		.testimonial_slide_inner {
-			padding-left: 0px;
-			i {
-				display: none;
-				visibility: hidden;
-			}
-		}
-	}
+
+.page #content #comments {
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
