@@ -18,7 +18,7 @@ while(have_posts()): the_post();
 
 		<div id="content-wrap" class="<?php echo $be_pb_class; ?>">
 			<div class="page-title-container" >
-				<h1 class="page-title fws-center"><?php the_title();  ?></h1>
+				<h2 class="page-title fws-center"><?php the_title();  ?></h2>
 			</div>
 			<section id="page-content">
 				<div class="clearfix">
