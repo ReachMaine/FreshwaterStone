@@ -58,7 +58,7 @@ hr.separator {
 	overflow: visible; // fix for IE.
 }
 
-hr:after { 
+div.hr-logo hr:after { 
     background: url('./images/fws-hr-icon.png') no-repeat top center;
     content: "";
     display: block;
