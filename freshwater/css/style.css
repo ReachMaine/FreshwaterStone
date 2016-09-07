@@ -48,14 +48,15 @@ Version: 1.2
   padding-bottom: 0px; }
 
 #content.fws-page-with-title #content-wrap {
-  padding-top: 40px; }
+  padding-top: 40px;
+  padding-bottom: 0px; }
 
 .page-title-container .page-title {
   color: #333237; }
 
 /*** homepage ***/
-#content .rev_slider_wrapper {
-  border: 1px solid #333237; }
+#content .rev_slider_wrapper .tparrows:before {
+  color: #e4e4e4; }
 
 .testimonials_wrap .testimonials-slides .testimonial_slide .testimonial_slide_inner {
   padding-left: 5px; }
@@ -68,10 +69,8 @@ Version: 1.2
     margin-bottom: 0px; }
 
 /* content */
-#content-wrap p {
+#content-wrap p, #content-wrap ul {
   font-weight: 300; }
-#content-wrap p.fws-indent {
-  text-indent: 20px; }
 #content-wrap .tabs ul.be-tab-header.ui-tabs-nav {
   display: flex;
   justify-content: center; }
@@ -122,8 +121,8 @@ div.hr-logo hr:after {
   border-top: 1px solid #e4e4e4; }
   #bottom-widgets .widget {
     clear: both; }
-    #bottom-widgets .widget h6 {
-      margin-bottom: 10px; }
+    #bottom-widgets .widget .textwidget {
+      line-height: 13px; }
   #bottom-widgets .widget:not(:first-child) {
     padding-top: 20px; }
   #bottom-widgets .social-footer a {

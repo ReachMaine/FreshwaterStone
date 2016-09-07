@@ -22,6 +22,7 @@ Version: 1.2
 #content.fws-page-with-title {
 	#content-wrap {
 		padding-top: 40px;
+		padding-bottom: 0px;
 	}
 }
 .page-title-container {
@@ -31,7 +32,10 @@ Version: 1.2
 }
 /*** homepage ***/
 #content .rev_slider_wrapper {
-	border: 1px solid #333237; //#e4e4e4;
+	//border: 1px solid #333237; //#e4e4e4;
+	.tparrows:before {
+		color: #e4e4e4;
+	}
 }
 .testimonials_wrap  {
 	.testimonials-slides .testimonial_slide {
@@ -54,11 +58,11 @@ Version: 1.2
 }
 /* content */
 #content-wrap {
-	p {
+	p, ul {
 		font-weight: 300; // make content 
 	}
 	p.fws-indent {
-		text-indent: 20px;
+		//text-indent: 20px; // ha!
 	}
 	.tabs {
 		ul.be-tab-header.ui-tabs-nav {
@@ -135,7 +139,10 @@ div.hr-logo hr:after {
 	.widget {
 		clear: both; 
 		h6 {
-			margin-bottom: 10px;
+			//margin-bottom: 10px;
+		}
+		.textwidget {
+			line-height: 13px;
 		}
 	}
 	.widget:not(:first-child) {
