@@ -1,6 +1,7 @@
 <?php
 /* 24Aug16 zig - make footer 2/3, 1/3 
 *  30Aug16 zig - make footer 1/2 1/4 1/4
+*  7Sept16 zig - make footer 1/1
 */
 
 	global $be_themes_data;
@@ -26,7 +27,7 @@
 		$col_class = "one-fourth";
 		$i = 4;
 	}
-	$i = 3; // now, want 3 only want two columns in footer -zig 
+	$i = 1; // now, want 3 only want two columns in footer -zig 
 	$col_class = "one-fourth";
 	for($j = 1; $j <= $i; $j++) { 
 		if ( is_active_sidebar( 'footer-widget-'.$j ) ) {
@@ -39,7 +40,7 @@
 			<div id="bottom-widgets-wrap" class="be-wrap be-row clearfix">
 				<?php for($j = 1; $j <= $i; $j++) : ?>
 					<?php if ($j == 1) { /* zig first columns is 1/2*/?>
-						<div class="one-half column-block clearfix">
+						<div class="one-col column-block clearfix">
 					<?php  } else {  /* zig other column is 1/3 */ ?> 
 						<div class="<?php echo $col_class; ?> column-block clearfix">
 					<?php  } ?>
