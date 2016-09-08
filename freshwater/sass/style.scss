@@ -68,6 +68,10 @@ Version: 1.2
 		ul.be-tab-header.ui-tabs-nav {
 			display: flex;
 			justify-content: center;
+			flex-wrap: wrap;
+			li {
+				padding-top: 20px;
+			}
 		}
 	}
 }
