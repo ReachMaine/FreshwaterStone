@@ -65,6 +65,7 @@ Version: 1.2
 		//text-indent: 20px; // ha!
 	}
 	.tabs {
+		margin-bottom: 0px;
 		ul.be-tab-header.ui-tabs-nav {
 			display: flex;
 			justify-content: center;
@@ -72,6 +73,9 @@ Version: 1.2
 			li {
 				padding-top: 20px;
 			}
+		}
+		p:empty { // remove margin on empty p tags in tabs.
+			margin-bottom: 0px;
 		}
 	}
 }

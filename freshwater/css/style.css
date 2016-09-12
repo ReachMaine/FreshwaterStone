@@ -74,12 +74,16 @@ Version: 1.2
 /* content */
 #content-wrap p, #content-wrap ul {
   font-weight: 300; }
-#content-wrap .tabs ul.be-tab-header.ui-tabs-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
-  #content-wrap .tabs ul.be-tab-header.ui-tabs-nav li {
-    padding-top: 20px; }
+#content-wrap .tabs {
+  margin-bottom: 0px; }
+  #content-wrap .tabs ul.be-tab-header.ui-tabs-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #content-wrap .tabs ul.be-tab-header.ui-tabs-nav li {
+      padding-top: 20px; }
+  #content-wrap .tabs p:empty {
+    margin-bottom: 0px; }
 
 hr.separator {
   display: inherit;
