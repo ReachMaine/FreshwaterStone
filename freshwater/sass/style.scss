@@ -80,6 +80,19 @@ Version: 1.2
 	}
 }
 
+//captions on BE sliders
+.be-slider-content-inner-wrap {
+	padding: 10px;
+	background-color: rgba(255, 255, 255, .9);
+	color: black;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.be-slider-content.clearfix {
+	vertical-align: bottom;
+}
+
 hr.separator {
 	display: inherit;
 	overflow: visible; // fix for IE.
