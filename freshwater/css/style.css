@@ -98,6 +98,8 @@ Version: 1.2
       padding-top: 20px; }
   #content-wrap .tabs p:empty {
     margin-bottom: 0px; }
+#content-wrap article.blog-post.element {
+  margin-bottom: 0px; }
 
 .be-slider-content-inner-wrap {
   padding: 10px;
