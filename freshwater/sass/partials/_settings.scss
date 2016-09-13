@@ -50,3 +50,20 @@ $menuBarbkg: #D14719; //
 	padding-bottom: 0px;
 }
 
+.fws-caption { // row marked such, style captions
+	.wp-caption {
+		padding-bottom: 26px;
+		border-bottom: 2px solid #eeeeee; 
+		margin-bottom: 10px;
+		.wp-caption-text {
+			padding-top: 10px;
+			font-style: normal;
+			font-size: 13px;
+			line-height: 18px;
+			text-align: left;
+		}
+	}
+}
+.element .be-row.zero-bottom {
+	margin-bottom: 0px;
+}
