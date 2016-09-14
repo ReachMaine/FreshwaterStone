@@ -1,6 +1,11 @@
 #redirect old /site to 
 RedirectMatch 301 ^/site/*$ http://www.freshwaterstone.com/
 
+#redirect individual urls 
+RewriteEngine On
+RewriteRule ^site/about/?$ $1/our-story$2 [R=301,L]
+RewriteRule ^site/about/4-about/about?$ $1/our-story$2 [R=301,L]
+RewriteRule ^site/residential-architecture/?$ $1/our-expertise$2 [R=301,L]
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
