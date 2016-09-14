@@ -1,3 +1,6 @@
+#redirect old /site to 
+RedirectMatch 301 ^/site/*$ http://www.freshwaterstone.com/
+
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
@@ -10,3 +13,7 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+RewriteCond %{HTTP_HOST} ^freshwaterstone\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.freshwaterstone\.com$
+RewriteRule ^site\/?$ "http\:\/\/freshwaterstone\.com\/" [R=301,L]
+
