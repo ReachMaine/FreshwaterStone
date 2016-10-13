@@ -64,6 +64,9 @@ Version: 1.2
 .element .be-row.zero-bottom {
   margin-bottom: 0px; }
 
+.fws-center-col-images .row .col .wp-caption {
+  margin: auto; }
+
 /****** header *****/
 /***** content *****/
 #content.fws-full-width #content-wrap {

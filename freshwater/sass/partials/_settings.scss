@@ -72,3 +72,8 @@ $menuBarbkg: #D14719; //
 .element .be-row.zero-bottom {
 	margin-bottom: 0px;
 }
+.fws-center-col-images {
+	.row .col .wp-caption {
+		margin: auto;
+	}
+}
