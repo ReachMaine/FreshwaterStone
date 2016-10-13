@@ -44,6 +44,12 @@ Version: 1.2
   padding-top: 0px;
   padding-bottom: 0px; }
 
+.wp-caption.alignleft {
+  margin-right: 0px; }
+
+.wp-caption.alignright {
+  margin-left: 0px; }
+
 .fws-caption .wp-caption {
   padding-bottom: 26px;
   border-bottom: 2px solid #eeeeee;

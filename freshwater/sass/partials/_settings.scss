@@ -49,7 +49,12 @@ $menuBarbkg: #D14719; //
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
-
+.wp-caption.alignleft {
+	margin-right: 0px;
+}
+.wp-caption.alignright {
+	margin-left: 0px;
+}
 .fws-caption { // row marked such, style captions
 	.wp-caption {
 		padding-bottom: 26px;
