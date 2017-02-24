@@ -4,18 +4,17 @@
  * Template Name: Page With Title
  *
 */
-get_header(); 
-global $be_themes_data; 
+get_header();
+global $be_themes_data;
 while(have_posts()): the_post();
 	$be_pb_class = 'page-builder';
 	$be_pb_disabled = get_post_meta( $post->ID, '_be_pb_disable', true );
-	if( true === $be_pb_disabled || 'yes' == $be_pb_disabled || !isset( $be_themes_data['enable_pb'] ) || 0 == $be_themes_data['enable_pb'] ) {
+	if( !function_exists( 'is_edited_with_tatsu' ) || !is_edited_with_tatsu( get_the_ID() ) ) {
 		$be_pb_class = 'be-wrap no-page-builder';
 	}
 	//get_template_part( 'page-breadcrumb' );
 	?>
-	<section id="content" class="no-sidebar-page fws-page-with-title">
-
+	<section id="content" class="no-sidebar-page">
 		<div id="content-wrap" class="<?php echo $be_pb_class; ?>">
 			<div class="page-title-container" >
 				<h1 class="page-title fws-center"><?php the_title();  ?></h1>
@@ -31,6 +30,6 @@ while(have_posts()): the_post();
 				<?php endif; ?>
 			</section>
 		</div>
-	</section>	<?php 
+	</section>	<?php
 endwhile;
 get_footer(); ?>

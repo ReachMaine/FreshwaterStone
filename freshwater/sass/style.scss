@@ -57,9 +57,12 @@ Version: 1.2
 	}
 }
 /* content */
+#content-wrap.page-builder {
+	padding-top: 40px!important;
+}
 #content-wrap {
 	p, ul {
-		font-weight: 300; // make content 
+		font-weight: 300; // make content
 	}
 	p.fws-indent {
 		//text-indent: 20px; // ha!
@@ -101,13 +104,16 @@ hr.separator {
 	margin-top: 20px!important;
 }
 
-div.hr-logo hr:after { 
-    background: url('./images/fws-hr-icon.png') no-repeat top center;
-    content: "";
-    display: block;
-    height: 25px; /* height of the ornament */
-    position: relative;
-    top: -12px; /* half the height of the ornament */
+div.hr-logo {
+	text-align: center;
+	hr:after {
+	    background: url('./images/fws-hr-icon.png') no-repeat top center;
+	    content: "";
+	    display: block;
+	    height: 25px; /* height of the ornament */
+	    position: relative;
+	    top: -12px; /* half the height of the ornament */
+	}
 }
 /*  portfolio */
 .portfolio-all-wrap {
@@ -123,7 +129,7 @@ div.hr-logo hr:after {
 			.element {
 				.thumb-overlay {
 					.thumb-bg {
-						background-color: $bkgoundContent;// #e4e4e4; 
+						background-color: $bkgoundContent;// #e4e4e4;
 					}
 				}
 			}
@@ -149,7 +155,7 @@ div.hr-logo hr:after {
 				}
 			}
 		}
-	}	
+	}
 }
 /**** sidebar ****/
 /***** footer *****/
@@ -160,7 +166,7 @@ div.hr-logo hr:after {
 	border-top: 1px solid #e4e4e4;
 
 	.widget {
-		clear: both; 
+		clear: both;
 		h6 {
 			//margin-bottom: 10px;
 		}
@@ -179,4 +185,4 @@ div.hr-logo hr:after {
 		}
 	}
 }
-@import "partials/media"; // keep at end of of file 
+@import "partials/media"; // keep at end of of file

@@ -67,6 +67,13 @@ Version: 1.2
 .fws-center-col-images .row .col .wp-caption {
   margin: auto; }
 
+.fws-row {
+  overflow: hidden;
+  width: 100%; }
+  .fws-row .fws-col5 {
+    float: left;
+    width: 20%; }
+
 /****** header *****/
 /***** content *****/
 #content.fws-full-width #content-wrap {
@@ -95,6 +102,9 @@ Version: 1.2
     margin-bottom: 0px; }
 
 /* content */
+#content-wrap.page-builder {
+  padding-top: 40px !important; }
+
 #content-wrap p, #content-wrap ul {
   font-weight: 300; }
 #content-wrap .tabs {
@@ -125,15 +135,17 @@ hr.separator {
   overflow: visible;
   margin-top: 20px !important; }
 
-div.hr-logo hr:after {
-  background: url("./images/fws-hr-icon.png") no-repeat top center;
-  content: "";
-  display: block;
-  height: 25px;
-  /* height of the ornament */
-  position: relative;
-  top: -12px;
-  /* half the height of the ornament */ }
+div.hr-logo {
+  text-align: center; }
+  div.hr-logo hr:after {
+    background: url("./images/fws-hr-icon.png") no-repeat top center;
+    content: "";
+    display: block;
+    height: 25px;
+    /* height of the ornament */
+    position: relative;
+    top: -12px;
+    /* half the height of the ornament */ }
 
 /*  portfolio */
 .portfolio-all-wrap .filters {

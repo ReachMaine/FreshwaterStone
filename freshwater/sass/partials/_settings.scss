@@ -3,9 +3,9 @@
 $linkcolor: #a62425;
 $titleFontColor: #a62425;
 $page-title-color: #333237;//#52728E;
-// Background colors: 
+// Background colors:
 
-$bkgoundContent: #FFFFFF; // 
+$bkgoundContent: #FFFFFF; //
 $menuBarbkg: #D14719; //
 
 /* Typography ------------------------------------------ */
@@ -31,7 +31,7 @@ $menuBarbkg: #D14719; //
 }
 
 .fws-center {
-	text-align: center; 
+	text-align: center;
 }
 .fws-polaroid {
 	border: 2px solid #ffffff;
@@ -58,7 +58,7 @@ $menuBarbkg: #D14719; //
 .fws-caption { // row marked such, style captions
 	.wp-caption {
 		padding-bottom: 26px;
-		border-bottom: 2px solid #eeeeee; 
+		border-bottom: 2px solid #eeeeee;
 		margin-bottom: 10px;
 		.wp-caption-text {
 			padding-top: 10px;
@@ -75,5 +75,11 @@ $menuBarbkg: #D14719; //
 .fws-center-col-images {
 	.row .col .wp-caption {
 		margin: auto;
+	}
+}
+.fws-row {
+	overflow: hidden; width:100%;
+	.fws-col5 {
+		float: left; width: 20%;
 	}
 }
