@@ -36,6 +36,18 @@ Version: 1.2
 	.tparrows:before {
 		color: #e4e4e4;
 	}
+	.tparrows.tp-rightarrow {
+		left: initial!important;
+		right: 10px;
+	}
+	.tparrows.tp-leftarrow {
+		left: 10px!important;
+	}
+}
+.fws-max850 {
+	max-width: 850px;
+	margin-left: auto!important;
+	margin-right: auto!important;
 }
 .testimonials_wrap  {
 	.testimonials-slides .testimonial_slide {

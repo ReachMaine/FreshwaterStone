@@ -90,6 +90,16 @@ Version: 1.2
 /*** homepage ***/
 #content .rev_slider_wrapper .tparrows:before {
   color: #e4e4e4; }
+#content .rev_slider_wrapper .tparrows.tp-rightarrow {
+  left: initial !important;
+  right: 10px; }
+#content .rev_slider_wrapper .tparrows.tp-leftarrow {
+  left: 10px !important; }
+
+.fws-max850 {
+  max-width: 850px;
+  margin-left: auto !important;
+  margin-right: auto !important; }
 
 .testimonials_wrap .testimonials-slides .testimonial_slide .testimonial_slide_inner {
   padding-left: 5px; }
