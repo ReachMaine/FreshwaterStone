@@ -74,6 +74,9 @@ Version: 1.2
     float: left;
     width: 20%; }
 
+.be-animate.be-slider-content-inner {
+  margin-bottom: 0px !important; }
+
 /****** header *****/
 /***** content *****/
 #content.fws-full-width #content-wrap {
@@ -136,6 +139,8 @@ Version: 1.2
   color: black;
   font-size: 13px;
   line-height: 18px; }
+  .be-slider-content-inner-wrap .be-slider-content-inner p {
+    margin-bottom: 0px; }
 
 .be-slider-content.clearfix {
   vertical-align: bottom; }
