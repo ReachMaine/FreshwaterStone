@@ -26,8 +26,9 @@ $menuBarbkg: #D14719; //
         height: 100%;
 	}
 }
-.be-row.fws-content-narrow {
+.fws-content-narrow {
 	max-width: 850px;
+	margin: 0 auto!important;
 }
 
 .fws-center {
