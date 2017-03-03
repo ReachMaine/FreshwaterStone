@@ -18,11 +18,11 @@ Version: 1.2
 		padding-bottom: 0px;
 	}
 }
-
+.no-sidebar-page,
 #content.fws-page-with-title {
 	#content-wrap {
-		padding-top: 40px;
-		padding-bottom: 0px;
+		padding-top: 40px!important;
+		padding-bottom: 0px!important;
 	}
 }
 .page-title-container {
@@ -99,20 +99,21 @@ Version: 1.2
 }
 //captions on BE sliders
 .be-slider-content-inner-wrap {
-	padding: 10px;
+	//padding: 10px;
 	background-color: rgba(255, 255, 255, .9);
 	color: black;
 	font-size: 13px;
 	line-height: 18px;
 	.be-slider-content-inner p {
 		margin-bottom: 0px;
+		padding: 8px;
 	}
 }
 
 .be-slider-content.clearfix {
 	vertical-align: bottom;
 }
-
+hr.tatsu-divider,
 hr.separator {
 	display: inherit;
 	overflow: visible; // fix for IE.
