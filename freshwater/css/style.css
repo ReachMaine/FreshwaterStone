@@ -1,4 +1,3 @@
-@import url("../oshin/style.css");
 /*
 Theme Name: Freshwater
 Description: Oshin Child Theme for Freshwater Stone
@@ -6,6 +5,7 @@ Description: Oshin Child Theme for Freshwater Stone
 Template: oshin
 Version: 1.2
 */
+@import url("../oshin/style.css");
 /* Colors ---------------------------------------------- */
 /* Typography ------------------------------------------ */
 /* General */
@@ -77,6 +77,9 @@ Version: 1.2
 
 .be-animate.be-slider-content-inner {
   margin-bottom: 0px !important; }
+
+.fws-border {
+  border: 1px solid grey; }
 
 /****** header *****/
 /***** content *****/
@@ -172,7 +175,7 @@ div.hr-logo {
   .portfolio-all-wrap .filters h6:first-child {
     order: 6; }
 .portfolio-all-wrap .portfolio .portfolio-container .element .thumb-overlay .thumb-bg {
-  background-color: white; }
+  background-color: #FFFFFF; }
 
 /***** widgets in content *****/
 #page-content .widget.widget_advanced_menu {
