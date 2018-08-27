@@ -121,7 +121,10 @@ hr.separator {
 }
 
 div.hr-logo {
-	text-align: center;
+	text-align: center; // not working now???
+	hr {
+		margin: auto;
+	}
 	hr:after {
 	    background: url('./images/fws-hr-icon.png') no-repeat top center;
 	    content: "";

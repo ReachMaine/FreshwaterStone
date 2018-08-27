@@ -158,6 +158,8 @@ hr.separator {
 
 div.hr-logo {
   text-align: center; }
+  div.hr-logo hr {
+    margin: auto; }
   div.hr-logo hr:after {
     background: url("./images/fws-hr-icon.png") no-repeat top center;
     content: "";
