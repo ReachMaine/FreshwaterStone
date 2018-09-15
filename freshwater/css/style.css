@@ -81,6 +81,50 @@ Version: 1.2
 .fws-border {
   border: 1px solid grey; }
 
+.wpcf7-form textarea {
+  height: 200px; }
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="password"],
+.wpcf7-form input[type="datetime"],
+.wpcf7-form input[type="datetime-local"],
+.wpcf7-form input[type="date"],
+.wpcf7-form input[type="month"],
+.wpcf7-form input[type="time"],
+.wpcf7-form input[type="week"],
+.wpcf7-form input[type="number"],
+.wpcf7-form input[type="email"],
+.wpcf7-form input[type="url"],
+.wpcf7-form input[type="search"],
+.wpcf7-form input[type="tel"],
+.wpcf7-form input[type="color"] {
+  max-width: 100%; }
+.wpcf7-form input[type="tel"] {
+  width: 200px; }
+.wpcf7-form input.cf7-med {
+  width: 200px; }
+.wpcf7-form input.cf7-small {
+  width: 80px; }
+.wpcf7-form input.wpcf7-form-control.wpcf7-submit {
+  padding: 18px;
+  border: 0px;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold; }
+.wpcf7-form label {
+  font-weight: bold;
+  font-size: 1.1em; }
+.wpcf7-form p {
+  margin-bottom: 5px; }
+.wpcf7-form label.cf7-required:after {
+  content: "*";
+  color: red; }
+
+/*.wpcf7 .wpcf7-form .wpcf7-response-output.wpcf7-mail-sent-ok {
+	color: $cf7-success-color;
+	background-color: $cf7-success-background;
+	font-weight: bold;
+} */
 /****** header *****/
 /***** content *****/
 #content.fws-full-width #content-wrap {
