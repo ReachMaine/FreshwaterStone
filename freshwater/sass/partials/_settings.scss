@@ -90,3 +90,11 @@ $menuBarbkg: #D14719; //
 .fws-border {
 	border: 1px solid grey;
 }
+.fws-content-narrow,
+.tatsu-row.fws-content-narrow {
+	p {
+		max-width: 850px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

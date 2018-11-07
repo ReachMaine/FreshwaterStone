@@ -81,6 +81,12 @@ Version: 1.2
 .fws-border {
   border: 1px solid grey; }
 
+.fws-content-narrow p,
+.tatsu-row.fws-content-narrow p {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .wpcf7-form textarea {
   height: 200px; }
 .wpcf7-form input[type="text"],
