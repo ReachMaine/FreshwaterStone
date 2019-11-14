@@ -242,6 +242,11 @@ div.hr-logo {
       #page-content .widget.widget_advanced_menu ul li.menu-item a {
         text-transform: uppercase;
         font-weight: bold; }
+#page-content .fws-inline-menu .tatsu-menu-widget ul li {
+  padding: 5px 18px 5px 20px; }
+  #page-content .fws-inline-menu .tatsu-menu-widget ul li a {
+    font-weight: 700;
+    text-transform: uppercase; }
 
 /**** sidebar ****/
 /***** footer *****/

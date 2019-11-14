@@ -176,6 +176,19 @@ div.hr-logo {
 			}
 		}
 	}
+	.fws-inline-menu { // on column
+		.tatsu-menu-widget {
+			ul {
+				li {
+			    padding: 5px 18px 5px 20px;
+					a {
+						font-weight: 700;
+						text-transform: uppercase;;
+					}
+				}
+			}
+		}
+	}
 }
 /**** sidebar ****/
 /***** footer *****/
