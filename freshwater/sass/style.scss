@@ -194,8 +194,12 @@ div.hr-logo {
 /***** footer *****/
 
 #bottom-widgets {
+	/* zig 24jun21 - less padding with natural stone image in footer.  + add padding in wigdet text 
 	padding-top: 30px;
 	padding-bottom: 30px;
+	*/
+	padding-top: 0px;
+	padding-bottom: 5px;
 	border-top: 1px solid #e4e4e4;
 
 	.widget {
