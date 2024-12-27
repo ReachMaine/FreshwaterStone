@@ -1,11 +1,9 @@
 <?php
 $page_id = be_get_page_id();
-global $blog_attr, $more_text, $be_themes_data;
-$blog_attr = be_get_blog_attr( $blog_attr );
+global $blog_attr, $more_text;
 $post_classes = get_post_class();
-$is_wide_single = ( isset( $be_themes_data[ 'single_blog_style' ] ) && !empty( $be_themes_data[ 'single_blog_style' ] ) ) ? true : false;
 $post_classes = implode( ' ', $post_classes );
-if(!empty($blog_attr) && $blog_attr['style'] == 'style3') {
+if($blog_attr['style'] == 'style3') {
 	$post_classes .= ' element not-wide';
 	$article_gutter = 'style="margin-bottom: '.$blog_attr['gutter_width'].'px !important;"';
 } else {
@@ -14,7 +12,7 @@ if(!empty($blog_attr) && $blog_attr['style'] == 'style3') {
 $post_format = get_post_format();
 ?>	
 <article id="post-<?php the_ID(); ?>" class="element not-wide blog-post clearfix <?php echo esc_attr( $post_classes ); ?>" <?php echo esc_attr( $article_gutter ); ?>>
-	<div class="element-inner" style="<?php echo (!empty($blog_attr) && $blog_attr['style'] == 'style3') ? 'margin-left:'.$blog_attr['gutter_width'].'px' : ''; ?>">
+	<div class="element-inner" style="<?php echo ($blog_attr['style'] == 'style3') ? 'margin-left:'.$blog_attr['gutter_width'].'px' : ''; ?>">
 		<div class="post-content-wrap">
 			<?php
 				if( $post_format != 'quote' && $post_format != 'link' ) {
@@ -22,31 +20,28 @@ $post_format = get_post_format();
 				} 
 			?>
 			<div class="article-details clearfix">
-				<?php if( !is_single() || !$is_wide_single ) : ?>
-					<header class="post-header clearfix">
-						<?php
-							if( $post_format == 'quote' || $post_format == 'link' ) :
-								echo '<div class="post-top-details clearfix">';
-									get_template_part( 'blog/post', 'details' );
-								echo '</div>';
-								get_template_part( 'content', $post_format );
-							else :
-								echo '<div class="special-subtitle post-date"><a href="'.get_permalink().'" >'.get_the_date().'</a></div>';
-								if(get_the_title(get_the_ID())) {
-									be_echo_post_title();
-								}
-							endif;
-						?>
-					</header>
-				<?php endif; ?>	
+				<header class="post-header clearfix">
+					<?php
+						if( $post_format == 'quote' || $post_format == 'link' ) :
+							echo '<div class="post-top-details clearfix">';
+								get_template_part( 'blog/post', 'details' );
+							echo '</div>';
+							get_template_part( 'content', $post_format );
+						else :
+							echo '<div class="special-subtitle post-date"><a href="'.get_permalink().'" >'.get_the_date().'</a></div>';
+							if(get_the_title(get_the_ID())) {
+								echo '<h5 class="post-title"><a href="'.get_permalink(get_the_ID()).'">'.get_the_title(get_the_ID()).'</a></h5>';
+							}
+						endif;
+					?>
+				</header>
 				<?php if( $post_format != 'quote' && $post_format != 'link' ): ?>
-					<?php if( !is_single() || !$is_wide_single ) : ?>
-						<div class="post-top-details clearfix"><?php get_template_part( 'blog/post', 'details' ); ?></div>
-					<?php endif; ?>
+					<div class="post-top-details clearfix"><?php get_template_part( 'blog/post', 'details' ); ?></div>
 					<div class="post-details clearfix">
 						<div class="post-content clearfix">
 							<?php
 								if( !is_search() ) {
+									global $be_themes_data;
 									$be_pb_disabled = get_post_meta( get_the_ID(), '_be_pb_disable', true );	
 									
 									if ( isset($be_themes_data['enable_pb_blog_posts']) && 1 == $be_themes_data['enable_pb_blog_posts'] && 'yes' != $be_pb_disabled && !is_single() ) {
@@ -59,13 +54,13 @@ $post_format = get_post_format();
 											the_excerpt();
 										}
 									} else {
-										// the_content( __('Read More','oshin') );
+										// the_content( __('Read More','be-themes') );
 										if ( post_password_required() ) {
 					       	 				$content  = get_the_password_form();
 
 					       	 			    echo '<div class="be-wrap clearfix be-section-pad">'.$content.'</div>';
 					       	 			} else {
-											the_content( __('Read More','oshin') );
+											the_content( __('Read More','be-themes') );
 										}
 									}
 								}
@@ -76,8 +71,8 @@ $post_format = get_post_format();
 										'link_before'      => '',
 										'link_after'       => '',
 										'next_or_number'   => 'next',
-										'nextpagelink'     => __('Next >','oshin'),
-										'previouspagelink' => __('< Prev','oshin'),
+										'nextpagelink'     => __('Next >','be-themes'),
+										'previouspagelink' => __('< Prev','be-themes'),
 										'pagelink'         => '%',
 										'echo'             => 1 
 									);
@@ -91,10 +86,15 @@ $post_format = get_post_format();
 			<div class="clearfix"></div>
 		</div>
 	</div>
-	<?php if( !is_single() ) { ?>
-		<div class="blog-separator clearfix"><hr class="separator" /></div>
+	<?php if(is_single()) { ?>
+		<div class="clearfix single-post-share single-page-atts">
+			<div class="clearfix single-page-att">
+				<h6><?php echo __('Share This : ','be-themes'); ?></h6> <div class="share-links clearfix"><?php echo be_get_share_button(get_the_permalink(), get_the_title(), get_the_ID() ); ?></div>
+			</div>
+			<?php /* zig xout <div class="clearfix single-post-tags single-page-att">
+				<h6><?php echo __('Tags : ','be-themes'); ?></h6> <?php echo get_the_tag_list('<div class="tagcloud">','','</div>'); ?>
+			</div> */ ?>
+		</div>
 	<?php } ?>
+	<div class="blog-separator clearfix"><hr class="separator"></div>
 </article>
-<?php /*  if(is_single()) { // zig - dont need share or author or tags.
-	get_template_part('blog/single', 'share');
-} */?>
